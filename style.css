@@ -1,0 +1,114 @@
+:root {
+  --clr-primary: hsl(257, 40%, 49%);
+  --clr-secondary: hsl(300, 69%, 71%);
+}
+body {
+  background-image: url("./huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg");
+  background-color: var(--clr-primary);
+  color: #f5f5f5;
+}
+
+.container {
+  width: 90%;
+  margin: 2em auto;
+}
+
+#logo {
+  margin-bottom: 2em;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  margin: 2em auto;
+  gap: 3em;
+}
+
+.content-picture {
+  width: 50%;
+}
+#Content-Image {
+  max-width: 100%;
+  height: auto;
+}
+
+.content-topic {
+  width: 50%;
+  padding: 2em 0;
+}
+
+.content-topic * {
+  width: 75%;
+}
+
+h1 {
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  line-height: 1em;
+  font-size: 3em;
+}
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.15em;
+}
+
+.content-topic button {
+  border-radius: 100px;
+  background-color: #f5f5f5;
+  color: var(--clr-primary);
+  box-shadow: rgb(0, 0, 0, 0.5) 0 0 25px;
+  text-align: center;
+  padding: 1em;
+  font-size: 1.125em;
+  width: 175px;
+  height: auto;
+}
+
+button:hover {
+  cursor: pointer;
+  color: var(--clr-primary);
+  background-color: var(--clr-secondary);
+  box-shadow: rgba(0, 0, 0, 0.7) 0 0 35px;
+  transition: ease-in-out 300ms;
+}
+
+/* Social Icons */
+.footer {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  font-size: 1.2em;
+  width: 90%;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+.footer a i:hover {
+  color: var(--clr-secondary);
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-picture,
+  .content-topic {
+    width: 100%;
+  }
+
+  .footer {
+    justify-content: center;
+  }
+}
